@@ -1,11 +1,198 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+ 
+  background: linear-gradient(90deg, rgba(0,1,4,1) 14%, rgba(187,19,42,1) 85%);
+}
+
+.container h1{
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  text-align: center;
+  color: #fafafa;
+  text-decoration-color: #fafafa;
+}
+
+.destaques{
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  
+}
+
+.musicItem {
+  margin: 1rem;
+  display: flex;
+  opacity: 100%;
+}
+
+.musicList {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 7rem;
+  background: linear-gradient(90deg, rgba(0,1,4,1) 14%, rgba(187,19,42,1) 85%);
+
+  
+}
+
+.musicItem img {
+   height: 100%;
+   border-radius: 100%;
+
+}
+
+.musicDetails h1{
+  color: white;
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.control {
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  
+  padding-bottom: 0.5rem;
+
+}
+
+.control span{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+}
+
+.control ::-webkit-slider-thumb{
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: black;
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 100%;
+}
+.control input { 
+  height: 1rem;
+}
+
+.timeControl{
+  width: 100%;
+  
+}
+
+.volumControl{
+  
+}
+
+
+.time {
+  display: flex;
+  
+  justify-content: space-between;
+
+}
+.header {
+  height: 50vh;
+  display: flex;
+  background-color: white;
+}
+ 
+.headerImage {
+  position: relative;
+}
+
+.headerImage img {
+  height: 46vh;
+}
+
+
+.headerImage button {
+  position: absolute;
+  bottom: 25%;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: linear-gradient(90deg, rgba(0,1,4,1) 14%, rgba(187,19,42,1) 85%);
+  
+}
+
+.userPhoto {
+  display: flex;
+  align-items: center;
+}
+
+.userIcon {
+  font-size: 1rem !important;
+  
+
+}
+
+.volumIcon{
+
+  color: #fafafa;
+  font-size: 1rem !important;
+}
+
+
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa{
+  font-size: 2.5em
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+
+.iconContainer{
+  background-color: #eaeaea;
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.userPhoto img{
+   width: 6rem; 
+   height: 6rem;
+   border-radius: 100%;
+}
+.userDetails {
+  display: flex;
+  justify-content: center;
+  justify-items: center; 
+  flex-direction: column; 
+}
+
+.userDetails h1{
+  text-align: center;
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.play{
+  font-size: 4rem !important;
+  border: none;
+  background-color: white;
+  border-radius: 100%;
 }
 
 .main {
